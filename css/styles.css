@@ -1,0 +1,275 @@
+/*
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #0b0b0b;
+}
+
+main {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+h1 {
+  font-family: MasterBlush, cursive;
+  color: #fabba4;
+  font-size: 10rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+h2 {
+  letter-spacing: 0.8rem;
+  color: #e0e0e0;
+  padding-bottom: 2%;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.8rem;
+  color: #767676;
+  margin: 0;
+}
+
+h4,
+p {
+  font-size: 1.3rem;
+  color: #e0e0e0;
+}
+
+p {
+  font-weight: 300;
+}
+
+p,
+h2,
+h4 {
+  font-family: Montserrat, sans-serif;
+}
+
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+section {
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.section {
+  padding: 6% 20% 7%;
+  z-index: -1;
+}
+
+
+.parallax {
+  content: " ";
+  position: absolute;
+  height: 200vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.52);
+  background-size: 100%;
+  z-index: 10;
+}
+
+.bg {
+  pointer-events: none;
+  height: 150vh;
+  top: 0;
+  background: url(../images/background-all.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #565656;
+  width: 40%;
+}
+
+#cover {
+  padding: 18% 15% 10%;
+}
+
+#title {
+  padding: 3rem 0;
+}
+
+
+/*-----THE INFO BOXES*/
+
+#info-light,
+#info-parts,
+#info-details
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#copyright {
+  padding: 5% 0 2%;
+  margin: 0 auto;
+}
+
+#copyright p {
+  color: #555;
+  size: 0.5rem;
+}
+
+/*-----info divs*/
+
+.info-item {
+  height: 3.5rem;
+}
+
+.info-item,
+.info-question,
+.info-answer {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.info-question {
+  position: relative;
+  flex-direction: row-reverse;
+  margin-right: 2.2rem;
+  text-align: right;
+  width: 6rem;
+}
+
+.info-question::before {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.info-answer {
+  padding-left: 1rem;
+  border-left: 2px solid white;
+  text-align: left;
+  width: 30rem;
+}
+
+
+/*-----collapsible buttons & content*/
+
+.q-button::before {
+  content: "\02795";
+  color: #fabba4;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  position: absolute;
+  left: 98%;
+  bottom: 37%;
+}
+
+button {
+  padding: 0;
+  border: 0;
+}
+
+button h4 {
+  color: #fabba4;
+}
+
+.active::before {
+  content: "\2796";
+}
+
+.invis {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease, color 0.5s;
+  line-height: 1.3;
+  padding-bottom: 0;
+}
+
+.invis p {
+  color: #a9a9a9;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  h4,
+  p {
+    font-size: 1rem;
+  }
+  .info-item,
+  .info-question,
+  .info-answer {
+    height: 2.3rem;
+  }
+.info-item {
+  width: 30rem;
+}
+  .info-question {
+  margin-right: 1.7rem;
+  width: 6.5rem;
+}
+  .q-button::before {
+  content: "\02795";
+  color: #fabba4;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  position: absolute;
+  left: 95%;
+  bottom: 33%;
+}
+}
+
+@media screen and (max-width: 768px) {
+h1 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  h4,
+  p {
+    font-size: 1rem;
+  }
+  .info-item,
+  .info-question,
+  .info-answer {
+    height: 2.5rem;
+  }
+  .info-item {
+    width: 30rem;
+  }
+    .info-question {
+  margin-right: 1.5rem;
+  width: 9rem;
+}
+    .q-button::before {
+  content: "\02795";
+  color: #fabba4;
+  font-size: 0.6rem;
+  margin-left: 0.5rem;
+  position: absolute;
+  left: 96%;
+  bottom: 40%;
+}
+}

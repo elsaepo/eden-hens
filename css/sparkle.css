@@ -1,0 +1,36 @@
+
+#sparkle-box {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+	pointer-events: none;
+  z-index: 50;
+}
+
+img.sparkle-image {
+  position: absolute;
+  display: flex;
+  pointer-events: none;
+  animation-name: sparkle;
+  animation-timing-function: cubic-bezier(1,.77,.26,.58);
+  animation-iteration-count: infinite;
+  transform: scale(0);
+}
+
+@keyframes sparkle {
+  0%   {
+    opacity: 0;
+    transform: rotate(0deg) scale(0);
+  }
+  8%  {
+    opacity: .9;
+    transform: rotate(400deg) scale(1);
+  }
+  24% {
+    opacity: 0;
+    transform: rotate(900deg) scale(0);
+  }
+  100% {
+
+  }
+}
