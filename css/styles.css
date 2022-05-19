@@ -1,10 +1,8 @@
-@font-face {
-    font-family: 'masterblushregular';
-    src: url('https://elsaepo.github.io/eden-hens/masterblush-regular-webfont.woff2') format('woff2'),
-         url('https://elsaepo.github.io/eden-hens/masterblush-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+@font-face
+{
+font-family: "MasterBlush";
+src:
+url("css/fonts/Masterblush-Regular.otf") format("opentype"),
 }
 
 body {
