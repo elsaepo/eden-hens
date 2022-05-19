@@ -195,8 +195,7 @@ button h4 {
 .invis {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.1s ease, color 0.5s;
-  line-height: 1.3;
+  transition: max-height 0.1s ease;
   padding-bottom: 0;
 }
 
@@ -208,22 +207,22 @@ button h4 {
 
 @media screen and (max-width: 1200px) {
   h1 {
-    font-size: 6rem;
+    font-size: 7rem;
   }
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   h4,
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .info-item,
   .info-question,
   .info-answer {
-    height: 2.3rem;
+    height: 2.8rem;
   }
 .info-item {
-  width: 30rem;
+  width: 40rem;
 }
   .info-question {
   margin-right: 1.7rem;
@@ -232,7 +231,7 @@ button h4 {
   .q-button::before {
   content: "\02795";
   color: #fabba4;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-left: 0.5rem;
   position: absolute;
   left: 95%;
@@ -254,7 +253,7 @@ h1 {
   .info-item,
   .info-question,
   .info-answer {
-    height: 2.5rem;
+    height: 2.2rem;
   }
   .info-item {
     width: 30rem;
