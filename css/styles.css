@@ -17,9 +17,9 @@ main {
 }
 
 h1 {
-  font-family: MasterBlush, cursive;
+  font-family: "Clicker Script", cursive;
   color: #fabba4;
-  font-size: 10rem;
+  font-size: 9rem;
   font-weight: 100;
   margin: 0;
 }
@@ -87,7 +87,7 @@ section {
 
 .bg {
   pointer-events: none;
-  height: 150vh;
+  height: 300vh;
   top: 0;
   background: url(../images/background-all.png);
   background-size: 100%;
@@ -209,7 +209,7 @@ button h4 {
 
 @media screen and (max-width: 1200px) {
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   h3 {
     font-size: 1.4rem;
@@ -218,6 +218,11 @@ button h4 {
   p {
     font-size: 1.4rem;
   }
+
+  .bg {
+    height: 250vh;
+  }
+
   .info-item,
   .info-question,
   .info-answer {
@@ -246,7 +251,7 @@ button h4 {
 
 @media screen and (max-width: 768px) {
 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   h3 {
     font-size: 0.8rem;
@@ -255,6 +260,11 @@ h1 {
   p {
     font-size: 1rem;
   }
+
+  .bg {
+    height: 150vh;
+  }
+
   .info-item,
   .info-question,
   .info-answer {
