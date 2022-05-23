@@ -42,6 +42,7 @@ h4,
 p {
   font-size: 1.6rem;
   color: #e0e0e0;
+  z-index: 500;
 }
 
 p {
@@ -52,6 +53,10 @@ p,
 h2,
 h4 {
   font-family: Montserrat, sans-serif;
+}
+
+h4 {
+  pointer-events: none;
 }
 
 main {
@@ -178,7 +183,22 @@ hr {
   margin-left: 0.5rem;
   position: absolute;
   left: 98%;
-  bottom: 37%;
+  bottom: 40%;
+}
+
+.button-border {
+  content: "";
+  width: 10rem;
+  height: 60%;
+  position: absolute;
+  right: -2.3rem;
+  border: 1px solid white;
+  border-right: none;
+  z-index: 200;
+}
+
+.button-border:hover {
+  background-color: rgba(255, 127, 127, 0.2);
 }
 
 button {
@@ -242,10 +262,15 @@ button h4 {
   margin-left: 0.5rem;
   position: absolute;
   left: 95%;
-  bottom: 33%;
+  bottom: 35%;
 }
 .active::before {
   content: "\2796";
+}
+.button-border {
+  width: 8.2rem;
+  height: 60%;
+  right: -1.8rem;
 }
 }
 
@@ -284,9 +309,14 @@ h1 {
   margin-left: 0.5rem;
   position: absolute;
   left: 96%;
-  bottom: 36%;
+  bottom: 37%;
 }
 .active::before {
   content: "\2796";
+}
+.button-border {
+  width: 6rem;
+  height: 60%;
+  right: -1.5rem;
 }
 }
